@@ -23,9 +23,9 @@ ENV APP_DATABASE_PASSWORD=
 ENV APP_DATABASE=
 
 COPY server/ /app/
-COPY --from=client /app/lib /app/src/main/resources/public
+COPY --from=client /app/dist /app/src/main/resources/public
 
-RUN /app/gradlew assemble
+RUN chmod +x /app/gradlew && /app/gradlew assemble
 
 ENTRYPOINT ["java", "-jar", "/app/build/libs/warehouse-1.0.0.jar"]
 CMD []

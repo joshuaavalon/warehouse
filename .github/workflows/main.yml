@@ -45,6 +45,9 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: "15"
+      - name: Change wrapper permissions
+        working-directory: ./server
+        run: chmod +x ./gradlew
       - name: Build
         working-directory: ./server
         run: ./gradlew assemble
