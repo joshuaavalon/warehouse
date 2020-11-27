@@ -51,6 +51,8 @@ The server is configured by environment variables.
 java -jar warehouse-1.0.0.jar
 ```
 
+You can access the client from `http://localhost:8081`. You can also configure `src/main/resources/application.yml`.
+
 ## API
 
 All the API is under `/api`. All request and response are assumed in JSON unless specified otherwise.

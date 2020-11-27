@@ -1,6 +1,6 @@
 # Warehouse Client
 
-Warehouse server that build with Spring Boot.
+Warehouse client that build with TypeScript, React, and Material-UI.
 
 Note that this guide assumes you are running commands from this directory.
 
@@ -33,3 +33,7 @@ When you are in development, you can run by
 ```
 npm run start
 ```
+
+You can access the client from `http://localhost:8080`.
+
+Note that you also need the server to be running for the function to work. It assumes the server is running on `http://localhost:8081`, but it can be changed at `config/webpack.config.dev.js`.
