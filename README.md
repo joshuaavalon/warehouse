@@ -43,9 +43,11 @@ volumes:
 
 Note that you still need to migrate PostgreSQL database first. Please refer to the server document.
 
+There are also some sample data in `data` for you to upload via the upload function.
+
 ## Known Issues
 
-As this application is built in a short time, edge cases, error handling,
+As this application is built in a short time, edge cases and error handling is not optimal.
 
 [actions-badge]: https://github.com/joshuaavalon/warehouse/workflows/Main/badge.svg
 [actions]: https://github.com/joshuaavalon/warehouse/actions
