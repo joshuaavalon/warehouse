@@ -1,0 +1,4 @@
+DROP TABLE IF EXISTS product;
+DROP TABLE IF EXISTS location;
+DROP TABLE IF EXISTS storage;
+DROP INDEX IF EXISTS storage_unique;

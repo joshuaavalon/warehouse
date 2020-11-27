@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "./dist/",
+    "module": "esnext",
+    "target": "es6",
+    "sourceMap": true,
+    "allowJs": true,
+    "jsx": "react-jsx",
+    "lib": ["esnext", "dom"],
+    "moduleResolution": "node",
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedParameters": true,
+    "noUnusedLocals": true,
+    "strict": true,
+    "allowSyntheticDefaultImports": true,
+    "paths": {
+      "@": ["src"],
+      "@/*": ["src/*"]
+    }
+  },
+  "include": ["./src/**/*"],
+  "exclude": ["node_modules", "dist", "config"]
+}

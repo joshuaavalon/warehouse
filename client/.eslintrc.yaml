@@ -1,0 +1,16 @@
+extends:
+  - "@joshuaavalon/eslint-config-react"
+env:
+  browser: true
+  es6: true
+  node: true
+globals:
+  API: "readonly"
+overrides:
+  - files:
+      - "*.js"
+    env:
+      node: true
+    rules:
+      "@typescript-eslint/explicit-function-return-type": "off"
+      "prefer-named-capture-group": "off"
