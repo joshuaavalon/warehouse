@@ -2,8 +2,7 @@ FROM node:lts as client
 
 WORKDIR /app
 
-COPY client/src  /app/src
-COPY client/package.json tsconfig.json /app/
+COPY client  /app
 
 RUN npm ci && \
     npm run build

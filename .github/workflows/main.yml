@@ -47,7 +47,7 @@ jobs:
           java-version: "15"
       - name: Build
         working-directory: ./server
-        run: gradlew assemble
+        run: ./gradlew assemble
   docker:
     name: Build Docker image
     runs-on: ubuntu-latest

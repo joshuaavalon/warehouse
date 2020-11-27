@@ -4,7 +4,8 @@
   "description": "",
   "scripts": {
     "start": "webpack serve",
-    "build": "webpack --mode production --progress --profile"
+    "build": "webpack --mode production --progress --profile",
+    "lint": "eslint --ext .ts src"
   },
   "keywords": [],
   "author": "Joshua Avalon",
